@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- Authors: Joseph Smith and Christopher Bowen -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Mission Solutions Engineering - Office Layout Tool</title>
+		<meta name="description" content="Blank" />
+		<meta name="keywords" content="Blank" />
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta name="robots" content="index, follow" />
+		<meta name="Author" content="Joseph Smith and Christopher Bowen" />
+		<link rel="shortcut icon" href="img/mse.jpg" /> 
+		<!-- Window for the map -->
+		<style type="text/css"> v\:* {behavior:url(#default#VML);}
+			#map { height: 570px; width: 790px; border: 0px solid #888; }
+		</style>
+		<script src="js/jquery-1.6.2.min.js" type="text/javascript"></script>
+		<script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+		<script src="js/modernizr.js" type="text/javascript"></script>
+		<script src="js/OpenLayers.js" type="text/javascript"></script>
+        <script src="js/common.js" type="text/javascript"></script>
+		<script src="js/regularUser.js" type="text/javascript"></script>
+		<script src="js/tipsy.js" type="text/javascript"></script>
+		<script src="js/search.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="css/tipsy.css" media="screen" type="text/css" />
+		<link rel="stylesheet" href="css/commonStyle.css" media="screen" type="text/css" />
+		<link rel="stylesheet" href="css/userStyle.css" media="screen" type="text/css" /> 
+		<!--[if IE]><link rel="stylesheet" href="css/IEstyle.css" type="text/css" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="css/IE7style.css" type="text/css" /><![endif]-->
+	</head>
+	<body onload="init()">
+	<div id="maincontainer">
+		<!-- MSE Logo -->
+		<div id="logo">
+			<a href="index.html"><img src="img/missionSolutionsEngineering_Logo.png" alt="MSE Logo" /></a>
+		</div>
+		<!-- Page title bar -->
+		<div id="topsection"><div class="innertube">
+			<br /><div id="page_header">Office Layout Tool and Personnel Locator</div>
+			<div id="admin_login">
+				<a href="login.php?msg=" id="login_text" title="Click here to login">HR/Admin Login</a>
+			</div></div>
+		</div>
+		<div id="contentwrapper">
+			<!-- The middle section of the page for the map -->
+			<div id="contentcolumn">
+				<div class="innertube">
+					<div id="map_section">
+						<div id="map"></div>
+						<div id="otherfloor" style="display:none;"></div>
+					</div>
+					<br />
+				</div> 
+			</div>
+		</div> 
+		<!-- Right column for the search features -->
+		<div id="rightcolumn"><div class="innertube">
+			<div id="search_box">
+				<strong style="text-transform:uppercase;">Search</strong>&nbsp;&nbsp;&nbsp;
+				<!-- Search box hover text -->
+				<input id="search" type="text" 
+				title="Enter a search term. To search for multiple things, place a comma 
+					in between search terms." />
+				<a href="#" onclick="advSearch()"><img src="img/arrow_down.gif" 
+				id="search_arrow" title="Click for Advanced Search" alt="Search arrow" /></a>
+				<!-- Advanced options dropdown -->
+				<div id="adv_options">
+					<br />
+					Filter Search: <select id="search_filter">
+						<option value="name">By Name</option>
+						<option value="department">By Department</option>
+						<option value="email">By Email</option>
+						<option value="phone">By Phone</option>
+					</select>
+				</div>
+			</div>
+			<br />
+			<!-- Search box filler text -->
+			<div id="search_results">Enter the information of the employee you are looking for in the search box above.
+				<br /><br />To search for multiple things, place a comma in between search terms.</div>
+			<!-- When something is selected on the map, the results will be displayed here -->
+			<hr/>
+			<div id="result_details">
+				<div class="section_title">Currently Selected:</div>
+				<div id="selected_feature">[Nothing selected]</div>
+			</div>
+			<br />
+			<br />
+		</div>
+		</div> 
+		<!-- Floor level links to look at either the first or second floor -->
+		<div id="levelFoot">
+			<div id="levelSelection"><a href="#" onclick="switchLevel(1)" id="level1"
+				style="font-weight:bold; color:#DDD;"
+				title="Click here to see the 1st Floor">First Floor </a> |
+				<a href="#" onclick="switchLevel(2)" id="level2"
+					title="Click here to see the 2nd Floor">Second Floor </a></div>	
+		</div>
+		<!-- Map options section is the footer of the page -->
+		<div id="footer">
+			<!-- Each checkbox displays something different on the map -->
+			<div id="display">
+				<div id="map_stuff">
+					<strong style="text-transform:uppercase;">Display Options</strong>
+					<a href="#" onclick="dispOpt()"><img src="img/arrow_down.gif"
+						id="display_arrow" title="Click for Display Options" alt="Display arrow" /></a>
+				</div>
+				<div id="display_options">
+			    <table>	
+				 <tr> 
+				  <td><ul>
+					<li id="gold"><input type="checkbox" id="Peripherals" onclick="displaySimpleLayer('peripherals', this.checked)" value="Peripherals"/>Peripherals</li>
+                	<li id="lightblue"><input type="checkbox" id="Utilities" onclick="displaySimpleLayer('utilities', this.checked)" value="Utilities"/>Utilities</li>
+				  </ul></td>
+				  <td><ul>
+                	<li id="red"><input type="checkbox" id="Emergency" onclick="displaySimpleLayer('emergencies', this.checked)" value="Emergencies"/>Emergency</li>
+					<li id="purplegreen"><input type="checkbox" name="Room" onclick="displayComplexLayer(this, 'rooms', 'rType')" value="Training Room"/>Training Rooms</li>
+				  </ul></td>
+				  <td><ul>
+					<li id="magenta"><input type="checkbox" name="Room" onclick="displayComplexLayer(this, 'rooms', 'rType')" value="Classified Lab"/>Classified Labs</li>
+					<li id="green"><input type="checkbox" name="Room" onclick="displayComplexLayer(this, 'rooms', 'rType')" value="Unclassified Lab"/>Unclassified Labs</li>
+				  </ul></td>
+                  <td><ul>
+                	<li id="brown"><input type="checkbox" name="Room" onclick="displayComplexLayer(this, 'rooms', 'rType')" value="Conference Room"/>Conference Rooms</li> 
+					<li id="purpleorange"><input type="checkbox" name="Room" onclick="displayComplexLayer(this, 'rooms', 'rType')" value="Pod"/>Pods</li>
+				  </ul></td>
+				  <td><ul> 
+					<li id="purple"><input type="checkbox" id="Pantry" onclick="displaySimpleLayer('pantries', this.checked)" value="Pantries"/>Lunch Rooms</li>
+				    <li id="bluepink"><input type="checkbox" name="Room" onclick="displayComplexLayer(this, 'rooms', 'rType')" value="Bathroom"/>Bathrooms</li>
+				  </ul></td>
+				 </tr>
+			    </table>
+				<div id="departmentCheckboxes"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

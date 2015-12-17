@@ -1,0 +1,94 @@
+<Terrains> 
+   <Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> "Area A0" </Description> 
+	   <OuterBoundary> 
+	      <Coord> 13, -7 </Coord>
+	      <Coord> 13, 1  </Coord>
+		  <Coord>  6, 0 </Coord>
+		  <Coord> 6, -5 </Coord>
+		  <Coord> 6, -12 </Coord>
+	   </OuterBoundary>
+   </Terrain>
+   <Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> "Area A1" </Description> 
+	   <OuterBoundary> 
+		  <Coord> 13, 1  </Coord>
+		  <Coord> 13, 7 </Coord>
+	      <Coord>  6, 7 </Coord>
+		  <Coord>  6, 0 </Coord>
+	   </OuterBoundary>
+   </Terrain>
+   <Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> "Area A2" </Description> 
+	   <OuterBoundary> 
+			<Coord> 6, 7 </Coord>
+			<Coord> 6, 12 </Coord>
+			<Coord> 0, 15 </Coord>
+			<Coord>  0, 7 </Coord>
+	   </OuterBoundary>
+   </Terrain>
+   <Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> "Area A3" </Description> 
+	   <OuterBoundary> 
+	      <Coord>  6, 7 </Coord>
+		  <Coord>  0, 7 </Coord>
+		  <Coord>  0, -4 </Coord>
+		  <Coord>  6, -5 </Coord>
+		  <Coord>  6, 0 </Coord>
+	   </OuterBoundary>
+   </Terrain>
+   <Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> "Area A4" </Description> 
+	   <OuterBoundary> 
+	      <Coord>  6, -12 </Coord>
+		  <Coord>  6, -5 </Coord>
+		  <Coord>  0, -4 </Coord>
+		  <Coord>  0, -11 </Coord>
+	   </OuterBoundary>
+   </Terrain>
+   <Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> "Area A5" </Description> 
+	   <OuterBoundary> 
+	      <Coord>  0, -11 </Coord>
+		  <Coord>  0, -4 </Coord>
+		  <Coord>  -6, -5 </Coord>
+		  <Coord>  -6, -11 </Coord>
+	   </OuterBoundary>
+   </Terrain><Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> "Area A6" </Description> 
+	   <OuterBoundary> 
+	      <Coord>  0, -4 </Coord>
+		  <Coord>  0, 7 </Coord>
+		  <Coord>  -6, 7 </Coord>
+		  <Coord>  -6, 2 </Coord>
+		  <Coord>  -6, -5</Coord>
+	   </OuterBoundary>
+   </Terrain>
+   <Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> "Area A7" </Description> 
+	   <OuterBoundary> 
+	      <Coord>  0, 7 </Coord>
+		  <Coord>  0, 15 </Coord>
+		  <Coord>  -6, 12 </Coord>
+		  <Coord>  -6, 7 </Coord>
+	   </OuterBoundary>
+   </Terrain>
+   <Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> "Area A8" </Description> 
+	   <OuterBoundary> 
+	      <Coord>  -6, 2 </Coord>
+		  <Coord>  -6, 7 </Coord>
+		  <Coord>  -6, 12 </Coord>
+		  <Coord>  -11, 7 </Coord>
+	   </OuterBoundary>
+   </Terrain>
+</Terrains>

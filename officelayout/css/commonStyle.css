@@ -1,0 +1,293 @@
+/* Authors: Joseph Smith and Christopher Bowen
+ * 
+ * The common elements all the HTML pages contain
+ */
+
+/* Default for the html and body tags */
+html, body{
+	margin:0px;
+	padding:0px;
+	height:101%;
+}
+
+/* More styling for the body */
+body {
+	font:0.75em Arial, Helvetica, sans-serif;
+	background:#2657b3;
+	background-repeat:repeat;
+	background-position:center;
+	background-image:url(../img/bg_abstract.jpg);
+}
+
+/* All images have 0 border unless otherwise specified */
+img {
+	border:0px;
+}
+
+/* Default for comment fields */
+textarea {
+	resize:none;
+}
+
+/* Change the default unordered list bullet point to none 
+ * This is for the color legend
+ */
+ul {
+	list-style-type:none;
+	text-align:left;
+}
+
+/* The login form */
+#logintable { 
+	border:0px;
+	padding:2px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+/* The accounts and hr forms */
+#accountstable, #hr_table {
+	width:450px;
+}
+
+/* TD elements of the respective tables */
+.accounts_element,
+.settings_element,
+.hr_element {
+	margin-top:auto;
+	margin-bottom:auto;
+}	
+
+/* Submit buttons */
+.account_buttons,
+.settings_button,
+.hr_buttons {
+	text-align:center;
+}
+
+/* The settings form */
+.settings_table {
+	width:550px;	
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* Make the new unordered list bullet point the same icon used to
+ * display the selected map feature 
+ */
+#brown {
+    list-style-image:url(../js/img/marker-brown.png);
+}
+
+#gold {
+    list-style-image:url(../js/img/marker-gold.png);
+}
+
+#green {
+    list-style-image:url(../js/img/marker-green.png);
+}
+
+#lightblue {
+    list-style-image:url(../js/img/marker-lightblue.png);
+}
+
+#magenta {
+    list-style-image:url(../js/img/marker-magenta.png);
+}
+
+#purple {
+    list-style-image:url(../js/img/marker-purple.png);
+}
+
+#purplegreen {
+    list-style-image:url(../js/img/marker-purplegreen.png);
+}
+
+#purpleorange {
+    list-style-image:url(../js/img/marker-purpleorange.png);
+}
+
+#red {
+	list-style-image:url(../js/img/marker-red.png);
+}
+
+#bluepink {
+	list-style-image:url(../js/img/marker-bluepink.png);
+}
+
+/* Default properties for the admin login/logout links */
+#admin_login a:link, #admin_login a:visited {
+	color:#FFCC33;
+	text-decoration:none;
+}
+
+#admin_login a:hover, #admin_login a:active {
+	color:#FFFF00;
+	text-decoration:underline;
+}
+
+/* Default properties for the level selection links */
+#levelSelection a:link, #levelSelection a:visited {
+	color:#FFF;
+	text-decoration:none;
+}
+
+#levelSelection a:hover, #levelSelection a:active {
+    color:#CCC;
+    text-decoration:underline;
+}
+
+/* Level selction positioning */
+#levelSelection {
+	text-align:center;
+	background-color:#2657b3;
+}
+
+/* Default properties for the MSE logo position */
+#logo {
+	float:left;
+	margin-bottom:50px;
+	margin-top:-80px;
+}
+
+/* Title bar properties
+ * Includes the shadowing around the bar itself and
+ * the color shading feature
+ */
+#topsection{
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+	box-shadow: #333 1px 1px 6px;
+	background-color:#787878;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#555555', endColorstr='#787878'); /* for IE */
+	background:-webkit-gradient(linear, left top, left bottom, from(#555555), to(#787878)); /* for webkit browsers */
+    background:-moz-linear-gradient(top, #555555, #787878); /* for firefox 3.6+ */
+	background:-o-linear-gradient(top, #555555, #787878); /* for Opera */
+    behavior:url(js/PIE.htc);
+    font-size:15px;
+    font-weight:bold;
+    color:#fff;
+	margin-top:80px;
+}
+
+/* Contains all the sections of the web page:
+ * contentcolumn, rightcolumn, footer, and topsection
+ */
+#contentwrapper {
+	float: left;
+	width: 100%;
+}
+
+/* Default properties for the search box */
+#search_box {
+    background-color:#2556b2;
+    color:#fff;
+    padding:3px;
+    text-align:center;
+	margin-left:-10px;
+	margin-right:-10.5px;
+}
+
+/* The search text box properties */
+#search_box input {
+    border:1px #d0d0d0 solid;
+    outline:none;
+    padding:2px;
+    width:120px;
+}
+
+/* Advanced options arrow in the search box and display options box */
+#search_arrow, #display_arrow {
+	margin-left:3px;
+	cursor:pointer;
+}
+
+/* Default when advanced options are not chosen for searches */
+#adv_options {
+	display:none;
+}
+
+/* The search results area */
+#search_filter {
+	border:1px #d0d0d0 solid;
+	outline:none;
+}
+
+/* The divider between current selection and search results */
+#results_divider {
+    background-color:#d0d0d0;
+    border:none;
+    margin:0px;
+    width:100%;
+    height:1px;
+}
+
+/* Admin login link location */
+#admin_login {
+	font-weight:bold;
+    font-size:13px;
+	text-align:right;
+}
+
+/* The words in the page title bar */
+.section_title {
+    font-weight:bold;
+    font-size:13px;
+}
+
+/*Margins for inner DIV inside each column (to provide padding)*/
+.innertube {
+	margin: 10px; 
+	margin-top: 0px;
+}
+
+/* Misc classes to help move things around on the screen */
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
+}
+
+.clear {
+    clear:both;
+}
+
+table#webline {
+    width: 100%;
+    color: #806517;
+    background: #c0c0c0;
+    border: 1px solid #357ec7;
+    border-collapse: collapse;
+}
+
+table#webline tr {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #357ec7;
+}
+
+table#webline tr td {
+    border:  1px solid #357ec7;
+    margin: 0px;
+    padding: 0px;
+}
+
+table#webline tr td a {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+table#webline tr td a:hover {
+    text-decoration: underline;
+}
+
+table#webline tr td img {
+    vertical-align:middle;
+    border:none;
+    margin: 0px;
+    padding: 0px;
+}

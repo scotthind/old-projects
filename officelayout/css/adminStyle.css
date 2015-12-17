@@ -1,0 +1,167 @@
+/* Authors: Joseph Smith and Christopher Bowen
+ *
+ * The style sheet for the admin page to control the layout
+ * of all the elements on the screen
+ */
+ 
+/* Contains every div the page uses */
+#maincontainer {
+	width: 1250px; /*Width of main container*/
+	min-height:100%;
+	height:auto !important;
+	height:100%;
+	margin:0px auto; /*Center container on page*/
+	text-align:center;
+	background-image:url(../img/bg_abstract.jpg);
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+
+/* Title bar of the page */
+#page_header {
+	text-align:center;
+	text-indent:-200pt;
+}
+
+/* Contains the properties for the location of the map section of the page */
+#contentcolumn {
+	margin: 0px 190px 0px 10px;
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+	box-shadow: #333 1px 1px 6px;
+	background-color:#FFF;
+	width:802px;
+	height:572px;
+}
+
+/* Title for the map options */
+.options_title {
+    background-color:#2556b2;
+    color:#fff;
+    padding:4px;
+    text-align:center;
+}
+
+/* Contains the poperties for the location of the color legend */
+#leftcolumn {
+	float:left;
+	width:179px;
+	margin-left: -430px;
+	height:570px;
+	background: #FFF;
+	padding:1px;
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+	box-shadow: #333 1px 1px 6px;
+}
+
+/* Contains the properties for the location of the search section */
+#rightcolumn {
+	float: left;
+	width:235px;
+	height:570px;
+	margin-left: -240px;
+	background: #FFF;
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+	box-shadow: #333 1px 1px 6px;
+	padding:1px;
+	text-align:left;
+}
+
+/* Positions the level selection links */
+#levelFoot {
+	clear:left;
+	width:61.25%;
+	margin-left:10px;
+	padding:10px;
+}
+
+/* Positions the map options section of the page */
+#footer {
+	clear:left;
+	width:64%;
+	margin-left:10px;
+	background-color:#FFF;
+	text-align:left;
+	padding:1px;
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+	box-shadow: #333 1px 1px 6px;
+}
+
+/* The area containing the map and display options */
+#display {
+    clear:left;
+    width:64%;
+    margin-left:10px;
+	margin-top:10px;
+	margin-bottom:20px;
+    background-color:#FFF;
+    text-align:left;
+    padding:1px;
+    -webkit-box-shadow: #333 1px 1px 6px;
+    -moz-box-shadow: #333 1px 1px 6px;
+    box-shadow: #333 1px 1px 6px;
+}
+
+/* Results of a search being done */
+#search_results {
+	width:200px;
+	height:440px;
+	padding:8px;
+	overflow-y:auto;
+}
+
+/* Area where the results are displayed */
+#result_details {
+	padding-left:1px;
+	margin-top:0px;
+	margin-left:-10px;
+	margin-right:-9px;
+}
+
+/* Move the form up to adjust positioning of other elements */
+#form_area {
+	margin-top:-5px;
+	text-align:left;
+}
+
+/* Account modification button located on the bottom of the color legend */
+#modify_users {
+	font-weight:bold;
+	font-size:13px;
+	text-align:right;
+	text-indent:-115px;
+}
+
+/* Adjust the position of the admin link */
+#admin_settings {
+	border:0px;
+	float:left;
+	margin-left:1000px;
+	margin-top:-45px;
+}
+
+/* Adjust the current selection area */
+#current_selection {
+	background-color:#2556b2;
+	color:#FFF;
+	padding:4px;
+	text-align:center;
+}
+
+/* Formed used when moving peripherals */
+#moveForm {
+	text-align:left;
+}
+
+/* aligns selected items to the left */
+#selected {
+	text-align:left;
+}
+
+/* Information about the currently selected feature */
+#selected_feature {
+	overflow-x:auto;
+} 

@@ -1,0 +1,33 @@
+/* Authors: Joseph Smith and Christopher Bowen
+ * 
+ * Internet Explorer likes to be difficult so it
+ * has its own style sheet to slightly adjust a
+ * few things to make it visually pleasing to look at.
+ */
+ 
+/* Indent the text on the title bar differently */
+#page_header {
+	text-indent:50pt;
+}
+
+/* Change the width and spacing for the title bar */
+#topsection {
+	margin-bottom:10px;
+	width:100%;
+}
+
+/* Move the logo down so it can be visible */
+#logo {
+	margin-bottom:-15px;
+}
+
+/* Readjust the HR Settings link */
+#hrsettings {
+	margin-left:960px;
+	margin-top:-15px;
+}
+
+/* Readjust the Admin Settings link */
+#admin_settings {
+	margin-top:-20px;
+}

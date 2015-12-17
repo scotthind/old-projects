@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+  <Document>
+    <name>5/3/1.kml</name>
+    <description></description>
+    <Style>
+      <ListStyle id="hideChildren">
+        <listItemType>checkHideChildren</listItemType>
+      </ListStyle>
+    </Style>
+    <Folder>
+      <Region>
+        <Lod>
+          <minLodPixels>128</minLodPixels>
+          <maxLodPixels>-1</maxLodPixels>
+        </Lod>
+        <LatLonAltBox>
+          <north>-137.88571428571424</north>
+          <south>-152.51428571428568</south>
+          <east>-121.48571428571427</east>
+          <west>-136.11428571428570</west>
+        </LatLonAltBox>
+      </Region>
+      <GroundOverlay>
+        <drawOrder>10</drawOrder>
+        <Icon>
+          <href>http://elvis.rowan.edu/~strohe37/seproject/msepic/5/3/1.jpg</href>
+        </Icon>
+        <LatLonBox>
+          <north>-137.88571428571424</north>
+          <south>-152.51428571428568</south>
+          <east>-121.48571428571427</east>
+          <west>-136.11428571428570</west>
+        </LatLonBox>
+      </GroundOverlay>
+    </Folder>
+  </Document>
+</kml>

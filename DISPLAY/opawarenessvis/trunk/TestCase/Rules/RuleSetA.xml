@@ -1,0 +1,52 @@
+<Rules>
+	<System id = "Car">
+		<Mission objective = "Drive">
+			<SystemRule>
+				<Or>
+					<Condition>Car_Engine_A</Condition>
+					<Condition>Sensors</Condition>
+				</Or>
+			</SystemRule>
+				<Entity id = "Car_Engine_A">
+					<And>
+						<Condition> Cyl1 </Condition>
+							<Condition> Cyl2 </Condition>
+						<Condition> Cyl3 </Condition>
+						<Condition> Cyl4 </Condition>
+					</And>
+				</Entity>
+				<Entity id = "Sensors">
+					<Or>
+						<Condition> Sensor1 </Condition>
+						<Condition> Sensor2 </Condition>
+							<Condition> Sensor3 </Condition>
+					</Or>
+				</Entity>
+				<Asset id = "Cyl1">
+					<AtLeast> .7 </AtLeast>
+				</Asset>
+				<Asset id = "Cyl2">
+					<AtLeast> .7 </AtLeast>
+				</Asset>
+				<Asset id = "Cyl3">
+					<AtLeast> .7 </AtLeast>
+				</Asset>
+				<Asset id = "Cyl4">
+					<AtLeast> .7 </AtLeast>
+				</Asset>
+				<Asset id = "Sensor1">
+					<AtLeast> .7 </AtLeast>
+				</Asset>
+				<Asset id = "Sensor2">
+					<AtLeast> .7 </AtLeast>
+				</Asset>
+				<Asset id = "Sensor3">
+					<AtLeast> .7 </AtLeast>
+				</Asset>
+		</Mission>
+	</System>
+</Rules>
+
+			
+			
+					

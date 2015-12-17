@@ -1,0 +1,53 @@
+<Data>
+	<System name="Car7" type="SmallVehicle" id="Car">
+		<Entity type="CarEngine" id="Car_Engine_asdf">
+			<Entity type="CylinderSystem" id="Engine_Cyls">
+				<Asset type="EngineCylinder" id="Cyl1">0.8</Asset>
+				<Asset type="EngineCylinder" id="Cyl2">0.95</Asset>
+				<Asset type="EngineCylinder" id="Cyl3">1.0</Asset>
+				<Asset type="EngineCylinder" id="Cyl4">0.6</Asset>
+			</Entity>
+			<Entity type="SensorSystem" id="Sensors">
+				<Asset type="Sensor" id="Sensor1">0.8</Asset>
+				<Asset type="Sensor" id="Sensor2">0.95</Asset>
+				<Asset type="Sensor" id="Sensor3">1.0</Asset>
+			</Entity>
+			<Asset type="pipe" id="mommajamma"> .5 </Asset>
+			<Asset type="pipe" id="pappajamma"> .5 </Asset>
+		</Entity>
+	</System>
+	<System name="Car7" type="SmallVehicle" id="Car">
+		<Entity type="CarEngine" id="Car_Engine_asdf">
+			<Entity type="CylinderSystem" id="Engine_Cyls">
+				<Asset type="EngineCylinder" id="Cyl1">0.8</Asset>
+				<Asset type="EngineCylinder" id="Cyl2">0.95</Asset>
+				<Asset type="EngineCylinder" id="Cyl3">1.0</Asset>
+				<Asset type="EngineCylinder" id="Cyl4">0.6</Asset>
+			</Entity>
+			<Entity type="SensorSystem" id="Sensors">
+				<Asset type="Sensor" id="Sensor1">0.8</Asset>
+				<Asset type="Sensor" id="Sensor2">0.95</Asset>
+				<Asset type="Sensor" id="Sensor3">1.0</Asset>
+			</Entity>
+			<Asset type="pipe" id="mommajamma"> .5 </Asset>
+			<Asset type="pipe" id="pappajamma"> .5 </Asset>
+		</Entity>
+	</System>
+	<System name="Car7" type="SmallVehicle" id="Car">
+		<Entity type="CarEngine" id="Car_Engine_asdf">
+			<Entity type="CylinderSystem" id="Engine_Cyls">
+				<Asset type="EngineCylinder" id="Cyl1">0.8</Asset>
+				<Asset type="EngineCylinder" id="Cyl2">0.95</Asset>
+				<Asset type="EngineCylinder" id="Cyl3">1.0</Asset>
+				<Asset type="EngineCylinder" id="Cyl4">0.6</Asset>
+			</Entity>
+			<Entity type="SensorSystem" id="Sensors">
+				<Asset type="Sensor" id="Sensor1">0.8</Asset>
+				<Asset type="Sensor" id="Sensor2">0.95</Asset>
+				<Asset type="Sensor" id="Sensor3">1.0</Asset>
+			</Entity>
+			<Asset type="pipe" id="mommajamma"> .5 </Asset>
+			<Asset type="pipe" id="pappajamma"> .5 </Asset>
+		</Entity>
+	</System>
+</Data>

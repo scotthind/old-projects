@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KmlFile</name>
+	<Placemark>
+		<name>Untitled Polygon</name>
+		<description>
+			<severity>9</severity>
+		</description>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-82.42328712015934,52.92608176311028,0 -82.42289155265362,52.9251464561981,0 -82.42140229245365,52.9255861764828,0 -82.42204642344119,52.92637228539497,0 -82.42328712015934,52.92608176311028,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>Untitled Polygon</name>
+		<description><severity>3</severity></description>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-82.43001146043024,52.92357587437854,0 -82.42965157791004,52.92264071356504,0 -82.42807154812542,52.92273219645791,0 -82.42843662806922,52.92359346145964,0 -82.43001146043024,52.92357587437854,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+		<Placemark>
+		<name>Untitled Polygon</name>
+		<description><severity>6</severity>
+</description>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-82.42798610194663,52.92700570940225,0 -82.42761947341749,52.92590415068414,0 -82.42564178714044,52.92630799876523,0 -82.42567171016873,52.92740800621198,0 -82.42798610194663,52.92700570940225,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

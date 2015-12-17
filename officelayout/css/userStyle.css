@@ -1,0 +1,205 @@
+/* Authors: Joseph Smith and Christopher Bowen
+ *
+ * The style sheet for the main page to control the layout
+ * of all the elements on the screen
+ */
+ 
+/* Contains every div the page uses */
+#maincontainer{
+	width: 1080px; /*Width of main container*/
+	margin: 0px auto; /*Center container on page*/
+	min-height:100%;
+	height:auto !important;
+	height:100%;
+	text-align:center;
+	background-image:url(../img/bg_abstract.jpg);
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+
+/* Title bar of the page */
+#page_header {
+	text-align:center;
+	text-indent:-150pt;
+}
+
+/* Contains the properties for the location of the map section of the page */
+#contentcolumn{
+	margin: 0px 190px 0px 10px;
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+	box-shadow: #333 1px 1px 6px;
+	background-color:#fff;
+	width:802px;
+	height:572px;
+}
+
+/* The stuff on the map in index */
+#map_stuff {
+    background-color:#2556b2;
+    color:#fff;
+    padding:4px;
+    text-align:center;
+}
+
+/* Contains the poperties for the location of the color legend */
+#leftcolumn{
+	float: left;
+	width: 140px; 
+	margin-left: -1410px;
+	height:570px;
+	background: #FFF;
+	padding:1px;
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+	box-shadow: #333 1px 1px 6px;
+}
+
+/* Contains the properties for the location of the search section */
+#rightcolumn{
+	float: left;
+	width: 241px; 
+	height:570px;
+	margin-left: -255px;
+	background: #FFF;
+	-webkit-box-shadow: #333 1px 1px 6px;
+    -moz-box-shadow: #333 1px 1px 6px;
+	box-shadow: #333 1px 1px 6px;
+	padding:1px;
+}
+
+/* Positions the level selection links */
+#levelFoot {
+	clear:left;
+	width:61.25%;
+	margin-left:80px;
+	padding:10px;
+}
+
+/* Positions the map options section of the page */
+#footer{
+	clear: left;
+	width: 74%;
+	margin-left:10px;
+	margin-bottom:10px;
+	background-color:#FFF;
+	text-align:left;
+	padding:1px;
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+	box-shadow: #333 1px 1px 6px;
+}
+
+/* Results of a search being done */
+#search_results {
+    width:230px;
+    height:350px;
+    padding:1px;
+    overflow-y:auto;
+    text-align:left;
+	margin-top:-15px;
+}
+
+/* Used by search.php to place search results */
+#search_result {
+    cursor:pointer;
+    text-align:left;
+}
+
+/* Used to display the result in index for search queries */
+#result_details {
+    padding-left:1px;
+    text-align:left;
+}
+
+/* Default link properties for different HTML Pages */
+#selected_feature a:link, 
+#selected_feature a:visited, 
+#login_section a:link,
+#login_section a:visited,
+#gohome a:link,
+#gohome a:visited {
+	color:#0000FF;
+	text-decoration:none;
+}
+
+/* Default link properties for different HTML Pages */
+#selected_feature a:hover, 
+#selected_feature a:active, 
+#login_section a:hover,
+#login_section a:active,
+#gohome a:hover,
+#gohome a:active {
+	color:#6666FF;
+	text-decoration:underline;
+}
+
+/* Properties for the Login page */
+#login_section {
+    text-align:center;
+	width:500px;
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+	box-shadow: #333 1px 1px 6px;
+	background-color:#FFF;
+	padding:4px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:150px;
+}
+
+/* Form properties for index, hr, settings, and account modification pages */
+#form {
+    width:500px;
+    -webkit-box-shadow: #333 1px 1px 6px;
+    -moz-box-shadow: #333 1px 1px 6px;
+    box-shadow: #333 1px 1px 6px;
+    background-color:#fff;
+    padding:4px;
+    margin-right:auto;
+    margin-left:auto;
+	padding:12px;
+	text-align:left;
+}
+
+/* Istruction area for accounts, hr, and settings */
+.formtext {
+	text-align:center;
+}
+
+/* The form for accounts, hr, and settings */
+#form input, #form textarea {
+    padding:3px;
+}
+
+/* Settings link on the HR page */
+#hrsettings {
+	float:left;
+	border:0px;
+	margin-left:960px;
+	margin-top:-45px;
+}
+
+/* Logo for the login screen */
+#loginlogo {
+	float:left;
+}
+
+/* Confirmation page of addAccount, removeAccount, and sendMail */
+#confirmationsection {
+	text-align:center;
+	width:400px;
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+	box-shadow: #333 1px 1px 6px;
+	background-color:#FFF;
+	padding:4px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:200px;
+}
+
+/* Used by sendMail.php to display errors */
+#errorMessage {
+	text-align:left;
+}

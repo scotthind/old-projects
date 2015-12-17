@@ -1,0 +1,153 @@
+#adminLogin a:link, #adminLogin a:visited {
+    color:#CCC;
+    text-decoration:none;
+}
+
+#adminLogin a:hover, #adminLogin a:active {
+    color:#2657b3;
+    text-decoration:underline;
+}
+
+#maincontainer{
+	width: 1450px; /*Width of main container*/
+	margin: 0 auto; /*Center container on page*/
+	min-height:100%;
+	height:auto !important;
+	height:100%;
+	text-align:center;
+	background-image:url(../../MSEOfficeLayout/img/bg_abstract.jpg);
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+
+#page_header {
+	text-align:center;
+	text-indent:-150pt;
+}
+
+#contentcolumn{
+	margin: 0 190px 0 325px; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+	background-color:#fff;
+	width:802px;
+	height:572px;
+}
+
+#leftcolumn{
+	float: left;
+	width: 240px; /*Width of left column in pixel*/
+	margin-left: -1410px; /*Set margin to that of -(MainContainerWidth)*/
+	height:570px;
+	background: #FFF;
+	padding:1px;
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+}
+
+#rightcolumn{
+	float: left;
+	width: 240px; /*Width of right column*/
+	height:570px;
+	margin-left: -280px;
+	background: #FFF;
+	-webkit-box-shadow: #333 1px 1px 6px;
+    -moz-box-shadow: #333 1px 1px 6px;
+	padding:1px;
+}
+
+#levelFoot {
+	clear:left;
+	width:61.25%;
+	margin-left:310px;
+	padding:10px;
+}
+
+#footer{
+	clear: left;
+	width: 54%;
+	margin-left:325px;
+	background-color:#FFF;
+	text-align:left;
+	padding:10px;
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+}
+
+#search_results {
+    width:204px;
+    height:350px;
+    padding:8px;
+    overflow-y:scroll;
+    text-align:left;
+}
+
+#search_result {
+    cursor:pointer;
+    text-align:left;
+}
+
+#result_details {
+    padding-left:8px;
+    text-align:left;
+}
+
+#selected_feature a:link, 
+#selected_feature a:visited 
+#login_section a:link,
+#login_section a:visited,
+#gohome a:link,
+#gohome a:visited {
+	color:#0000FF;
+	text-decoration:none;
+}
+
+#selected_feature a:hover, 
+#selected_feature a:active 
+#login_section a:hover,
+#login_section a:active,
+#gohome a:hover,
+#gohome a:active {
+	color:#3333FF;
+	text-decoration:underline;
+}
+
+#login_section {
+    text-align:center;
+	width:500px;
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+	box-shadow: #333 1px 1px 6px;
+	background-color:#FFF;
+	padding:4px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#form {
+    width:500px;
+    -webkit-box-shadow: #333 1px 1px 6px;
+    -moz-box-shadow: #333 1px 1px 6px;
+    box-shadow: #333 1px 1px 6px;
+    background-color:#fff;
+    padding:4px;
+    margin-right:auto;
+    margin-left:auto;
+	padding:12px;
+	text-align:left;
+}
+
+.formtext {
+	text-align:center;
+}
+
+#form input, #form textarea {
+    padding:3px;
+}
+
+#hrsettings {
+	float:left;
+	margin-left:480px;
+	background-color:#2657b3;
+	margin-top:-20px;
+}

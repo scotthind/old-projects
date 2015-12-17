@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+  <Document>
+    <name>2/3/2.kml</name>
+    <description></description>
+    <Style>
+      <ListStyle id="hideChildren">
+        <listItemType>checkHideChildren</listItemType>
+      </ListStyle>
+    </Style>
+    <Folder>
+      <Region>
+        <Lod>
+          <minLodPixels>128</minLodPixels>
+          <maxLodPixels>-1</maxLodPixels>
+        </Lod>
+        <LatLonAltBox>
+          <north>194.30317848410755</north>
+          <south>81.63814180929094</south>
+          <east>270.66014669926648</east>
+          <west>157.99511002444984</west>
+        </LatLonAltBox>
+      </Region>
+      <GroundOverlay>
+        <drawOrder>4</drawOrder>
+        <Icon>
+          <href>../../2/3/2.jpg</href>
+        </Icon>
+        <LatLonBox>
+          <north>194.30317848410755</north>
+          <south>81.63814180929094</south>
+          <east>270.66014669926648</east>
+          <west>157.99511002444984</west>
+        </LatLonBox>
+      </GroundOverlay>    <NetworkLink>
+      <name>3/6/4.jpg</name>
+      <Region>
+        <Lod>
+          <minLodPixels>128</minLodPixels>
+          <maxLodPixels>-1</maxLodPixels>
+        </Lod>
+        <LatLonAltBox>
+          <north>137.97066014669926</north>
+          <south>81.63814180929094</south>
+          <east>214.32762836185816</east>
+          <west>157.99511002444984</west>
+        </LatLonAltBox>
+      </Region>
+      <Link>
+        <href>../../3/6/4.kml</href>
+        <viewRefreshMode>onRegion</viewRefreshMode>
+      </Link>
+    </NetworkLink>
+    </Folder>
+  </Document>
+</kml>

@@ -1,0 +1,124 @@
+#maincontainer {
+	width: 1600px;
+	min-height:100%;
+	height:auto !important;
+	height:100%;
+	margin:0 auto;
+	text-align:center;
+	background-image:url(../../MSEOfficeLayout/img/bg_abstract.jpg);
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+
+#page_header {
+	text-align:center;
+	text-indent:-300pt;
+}
+
+#verticalrule {
+	width:2px;
+	height:510px;
+	background-color:#000;
+	top:0px;
+	left:50px;
+	z-index:10;
+	margin-left:185px;
+	padding:0;
+	margin-top:-50px;
+}
+
+#contentcolumn {
+	margin: 0 190px 0 310px;
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+	background-color:#FFF;
+	width:802px;
+	height:572px;
+}
+
+#leftcolumn {
+	float:left;
+	width:240px;
+	margin-left: -1580px;
+	height:570px;
+	background: #FFF;
+	padding:1px;
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+}
+
+#rightcolumn {
+	float: left;
+	width:420px;
+	height:570px;
+	margin-left: -442px;
+	background: #FFF;
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+	padding:1px;
+	text-align:left;
+}
+
+#levelFoot {
+	clear:left;
+	width:61.25%;
+	margin-left:210px;
+	padding:10px;
+}
+
+#footer {
+	clear:left;
+	width:49%;
+	margin-left:310px;
+	background-color:#FFF;
+	text-align:left;
+	padding:10px;
+	-webkit-box-shadow: #333 1px 1px 6px;
+	-moz-box-shadow: #333 1px 1px 6px;
+}
+
+#search_results {
+	width:200px;
+	height:490px;
+	padding:8px;
+	overflow-y:scroll;
+}
+
+#result_details {
+	padding-left:8px;
+	width:auto;
+}
+
+/* Footer Section */
+/*#footer {
+	background-image:url(../img/bg_footer.jpg);
+	background-repeat:repeat-x;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	font-size:11px;
+	height:174px;
+	color:#d0d0d0;
+	clear:left;
+}
+
+.footerInner {
+	width:954px;
+	margin:0 auto;
+	padding:25px 0px 45px 0px;
+}
+
+#footer a:link, #footer a:visited {
+	color:#d0d0d0;
+	padding:0px 3px 0px 3px;
+	text-decoration:none;
+}
+
+#footer a:hover, #footer a:active {
+	color:#fff;
+	text-decoration:underline;
+}
+
+.copyright {
+	color:#d0d0d0;
+	padding:0px 30px 0px 0px;
+}*/

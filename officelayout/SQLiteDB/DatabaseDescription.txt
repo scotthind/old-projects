@@ -1,0 +1,166 @@
+--Authors: Joseph Smith and Christopher Bowen
+--Longitude and Latitude in all tables are specific to the
+--	longitude and latitude position used by OpenLayers.
+--	They signify where on the generated map icons will appear.
+--If a table has a Floor attribute, it is for which floor that
+--	particular item is on in the layout of the building.
+
+--This is the location and number of each office/cubicle in the building
+--CubicleNumber is the number given to us by MSE to label each
+--Longitude and Latitude in all tables are specific to the
+--  longitude and latitude position used by OpenLayers.
+--  They signify where on the generated map icons will appear.
+--Floor is which floor that particular item is on in the layout of the building.
+CREATE TABLE [Cubicle] (
+[CubicleNumber] VARCHAR(50)  NOT NULL PRIMARY KEY,
+[Longitude] FLOAT  NOT NULL,
+[Latitude] FLOAT  NOT NULL,
+[Floor] INTEGER  NOT NULL
+);
+
+--Contains each Department name and what Icon will be used for that
+--	department.
+--DeptName is the name of the deparment.
+--IconID is the name of the icon.
+CREATE TABLE [Department] (
+[DeptName] VARCHAR(50)  NOT NULL PRIMARY KEY,
+[IconID] VARCHAR(50) NOT NULL,
+FOREIGN KEY(IconID) REFERENCES Icons(IconID)
+);
+
+--Contains where all the emergency equipment or exits are in the
+--	building. Each emergency has an icon that is used to display 
+--	on the map. 
+--EmergencyID is an arbitrary value to number the emergency information.
+--IconID is the icon associated with the emergency.
+--Type is the type (equipment or exit).
+--Longitude and Latitude in all tables are specific to the
+--  longitude and latitude position used by OpenLayers.
+--  They signify where on the generated map icons will appear.
+--Floor is which floor that particular item is on in the layout of the building.
+CREATE TABLE [Emergency] (
+[EmergencyID] INTEGER PRIMARY KEY,
+[IconID] VARCHAR(50)  NOT NULL,
+[Type] VARCHAR(50)  NOT NULL,
+[Longitude] FLOAT  NOT NULL,
+[Latitude] FLOAT  NOT NULL,
+[Floor] INTEGER  NOT NULL,
+FOREIGN KEY(IconID) REFERENCES Icons(IconID)
+);
+
+--A list of possible icons for anything that displays on the map.
+--The IconID is the name by which the icon is refered to.
+--The IconPath is the relative pathname for the image.
+CREATE TABLE [Icons] (
+[IconID] VARCHAR(50)  NOT NULL PRIMARY KEY,
+[IconPath] VARCHAR(150)  UNIQUE NOT NULL
+);
+
+--Contains the location of all the pantries or lunchrooms
+--	in the building.
+--IconID the ID associated with the pantry.
+--Longitude and Latitude in all tables are specific to the
+--  longitude and latitude position used by OpenLayers.
+--  They signify where on the generated map icons will appear.
+--Floor is which floor that particular item is on in the layout of the building.
+CREATE TABLE [Pantry] (
+[PantryID] INTEGER  PRIMARY KEY,
+[IconID] VARCHAR(50)  NOT NULL,
+[Longitude] FLOAT  NOT NULL,
+[Latitude] FLOAT  NOT NULL,
+[Floor] INTEGER  NOT NULL,
+FOREIGN KEY(IconID) REFERENCES Icons(IconID)
+);
+
+--Contains the location of all the office peripherals.
+--Peripherals include things like copy machines and faxes.
+--PeriphID is an arbitratry numbering for peripherals.
+--Type is the model number given to us by MSE.
+----Longitude and Latitude in all tables are specific to the
+--  longitude and latitude position used by OpenLayers.
+--  They signify where on the generated map icons will appear.
+--Floor is which floor that particular item is on in the layout of the building.
+--IconID the icon associated with peripherals.
+CREATE TABLE [Peripherals] (
+[PeriphID] INTEGER  PRIMARY KEY,
+[Type] VARCHAR(50)  NOT NULL,
+[Floor] INTEGER  NOT NULL,
+[IconID] VARCHAR(50)  NOT NULL,
+[Longitude] FLOAT  NOT NULL,
+[Latitude] FLOAT  NOT NULL,
+FOREIGN KEY(IconID) REFERENCES Icons(IconID)
+);
+
+--Contains the information of all the employees at in the
+--	company.
+--The EmployeeIDs were given to us by MSE.
+--The CubicleNumber is the cubicle the employee is assigned to.
+--FirstName is the first name of the employee.
+--LastName is the last name of the employee.
+--DeptName is the department the employee belongs to.
+--Email is the employee's email.
+--Phone is the employee's phone number.
+CREATE TABLE [Personnel] (
+[EmployeeID] VARCHAR(50)  NOT NULL PRIMARY KEY,
+[CubicleNumber] VARCHAR(50)  UNIQUE NOT NULL,
+[FirstName] VARCHAR(50)  NOT NULL,
+[LastName] VARCHAR(50)  NOT NULL,
+[DeptName] VARCHAR(50)  NOT NULL,
+[Email] VARCHAR(50)  NULL,
+[Phone] VARCHAR(50)  NULL,
+FOREIGN KEY(CubicleNumber) REFERENCES Cubicle(CubicleNumber),
+FOREIGN KEY(DeptName) REFERENCES Department(DeptName)
+);
+
+--Contains the information about the various rooms.
+--RoomID is a numbering system for Rooms.
+--Type is what type of room it is. This includes 
+--	Conference Rooms, Bathrooms, Pods, etc.
+--IconID is the icon associated with the type room.
+--Longitude and Latitude in all tables are specific to the
+--  longitude and latitude position used by OpenLayers.
+--  They signify where on the generated map icons will appear.
+--Floor is which floor that particular item is on in the layout of the building.
+CREATE TABLE [Room] (
+[RoomID] INTEGER  PRIMARY KEY,
+[Type] VARCHAR(50)  NOT NULL,
+[IconID] VARCHAR(50)  NOT NULL,
+[Longitude] FLOAT  NOT NULL,
+[Latitude] FLOAT  NOT NULL,
+[Floor] INTEGER  NOT NULL,
+FOREIGN KEY(IconID) REFERENCES Icons(IconID)
+);
+
+--The User table contains all of the login information
+--	for admins and human resources.
+--Username is the name in which the user will login with.
+--Password is the password associated with the user.
+--UserType is either admin or human resources.
+--EmployeeID is the ID linked to the user who owns the
+--	account information.
+CREATE TABLE [User] (
+[Username] VARCHAR(50)  PRIMARY KEY NOT NULL,
+[Password] VARCHAR(50)  NOT NULL,
+[UserType] VARCHAR(50)  NOT NULL,
+[EmployeeID] VARCHAR(50)  NOT NULL,
+FOREIGN KEY(EmployeeID) REFERENCES Personnel(EmployeeID)
+);
+
+--Contains the information of the buildings utilities.
+--Such things include electric closets, elevator rooms, etc.  
+--A numbering system for utilities.
+--Type is what type of utility it is.
+--IconID is the icon associated with the utility.
+--Longitude and Latitude in all tables are specific to the
+--  longitude and latitude position used by OpenLayers.
+--  They signify where on the generated map icons will appear.
+--Floor is which floor that particular item is on in the layout of the building.
+CREATE TABLE [Utilities] (
+[UtilID] INTEGER  PRIMARY KEY,
+[Type] VARCHAR(50)  NOT NULL,
+[IconID] VARCHAR(50)  NOT NULL,
+[Longitude] FLOAT  NOT NULL,
+[Latitude] FLOAT  NOT NULL,
+[Floor] INTEGER  NOT NULL,
+FOREIGN KEY(IconID) REFERENCES Icons(IconID)
+);

@@ -1,0 +1,48 @@
+<Data>
+	<System name="Mercedes Benz" type="Car" id="Car">
+		<Entity type="Engine" id="Car_Engine_A">
+			<Entity type="Cylinder" id="Engine_Cyls">
+				<Asset type="Cylinder" id="Cyl1">0.8</Asset>
+				<Asset type="Cylinder" id="Cyl2">0.95</Asset>
+				<Asset type="Cylinder" id="Cyl3">1.0</Asset>
+				<Asset type="Cylinder" id="Cyl4">0.6</Asset>
+				<Asset type="Sensor" id="Cyl_Sensor">0.4</Asset>
+			</Entity>
+		</Entity>
+		<Entity type="Sensor" id="Sensors">
+			<Asset type="Sensor" id="Sensor1">0.8</Asset>
+			<Asset type="Sensor" id="Sensor2">0.95</Asset>
+			<Asset type="Sensor" id="Sensor3">1.0</Asset>
+			<Asset type="Sensor" id="Sensor4">1.0</Asset>
+			<Asset type="Sensor" id="Sensor5">1.0</Asset>
+			<Asset type="Sensor" id="Sensor6">1.0</Asset>
+			<Asset type="Sensor" id="Sensor7">1.0</Asset>
+			<Asset type="Sensor" id="Sensor8">1.0</Asset>
+			<Asset type="Sensor" id="Sensor9">1.0</Asset>
+			<Asset type="Sensor" id="Sensor10">1.0</Asset>
+			<Asset type="Sensor" id="Sensor11">1.0</Asset>
+			<Asset type="Sensor" id="Sensor12">1.0</Asset>
+			<Asset type="Sensor" id="Sensor13">1.0</Asset>
+			<Asset type="Sensor" id="Sensor14">1.0</Asset>
+			<Asset type="Sensor" id="Sensor15">0.2</Asset>
+			<Asset type="Sensor" id="Sensor16">1.0</Asset>
+			<Asset type="Sensor" id="Sensor17">1.0</Asset>
+			<Asset type="Sensor" id="Sensor18">.4</Asset>
+			<Asset type="Sensor" id="Sensor19">1.0</Asset>
+			<Asset type="Sensor" id="Sensor20">.6</Asset>
+			<Asset type="Sensor" id="Sensor21">1.0</Asset>
+			<Asset type="Sensor" id="Sensor22">1.0</Asset>
+			<Asset type="Sensor" id="Sensor23">.1</Asset>
+			<Asset type="Sensor" id="Sensor24">.1</Asset>
+			<Asset type="Sensor" id="Sensor25">.1</Asset>
+			<Asset type="Sensor" id="Sensor26">1.0</Asset>
+		</Entity>
+		<Entity type="Tire" id="Tires">
+			<Asset type="Tire" id="Tire1">.8</Asset>
+			<Asset type="Tire" id="Tire2">.6</Asset>
+			<Asset type="Tire" id="Tire3">.4</Asset>
+			<Asset type="Tire" id="Tire4">1.0</Asset>
+		</Entity>
+		<Asset type = "Sensor" id = "OutsideSensor"> 1.0 </Asset>
+	</System>
+</Data>

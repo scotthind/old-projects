@@ -1,0 +1,37 @@
+<Events>
+	<Event>
+		<StartDate>11/23/2011</StartDate>
+		<Severity>0.9</Severity>
+		<Description> Gang shooting </Description>
+		<HasMines>false</HasMines>
+		<OuterBoundary>
+			<Coord>39.9484823463,-74.9499732438</Coord>
+			<Coord>39.9463662177,-74.9514083194</Coord>
+			<Coord>39.9457992658,-74.9474937732</Coord>
+			<Coord>39.9480052891,-74.9467190632</Coord>
+		</OuterBoundary>
+	</Event>
+	<Event>
+		<StartDate>11/23/2011</StartDate>
+		<Severity>0.7</Severity>
+		<Description> Robbery </Description>
+		<HasMines>false</HasMines>
+		<OuterBoundary>
+			<Coord>39.9392999751,-74.9261554938</Coord>
+			<Coord>39.9383165029,-74.9274722858</Coord>
+			<Coord>39.937720124,-74.9257685431</Coord>
+			<Coord>39.9386738376,-74.9248776994</Coord>
+		</OuterBoundary>
+	</Event>
+	<Event>
+		<StartDate>11/23/2011</StartDate>
+		<Severity>0.9</Severity>
+		<Description> Murder </Description>
+		<HasMines>false</HasMines>
+		<OuterBoundary>
+			<Coord>39.9514987399,-74.9519562587</Coord>
+			<Coord>39.9497642396,-74.9509030935</Coord>
+			<Coord>39.9515249145,-74.9494716376</Coord>
+		</OuterBoundary>
+	</Event>
+</Events>

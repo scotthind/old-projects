@@ -1,0 +1,17 @@
+<Data>
+	<System name="Car7" type="SmallVehicle" id="Car">
+		<Entity type="Car_Engine" id="Car_Engine_A">
+			<Entity type="CylinderSystem" id="Engine_Cyls">
+				<Asset type="EngineCylinder" id="Cyl1">0.8</Asset>
+				<Asset type="EngineCylinder" id="Cyl2">0.95</Asset>
+				<Asset type="EngineCylinder" id="Cyl3">1.0</Asset>
+				<Asset type="EngineCylinder" id="Cyl4">0.6</Asset>
+			</Entity>
+		</Entity>
+		<Entity type="Sensor_System" id="Sensors">
+				<Asset type="Sensor" id="Sensor1">0.8</Asset>
+				<Asset type="Sensor" id="Sensor2">0.95</Asset>
+				<Asset type="Sensor" id="Sensor3">1.0</Asset>
+		</Entity>
+	</System>
+</Data>

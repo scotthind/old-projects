@@ -1,0 +1,117 @@
+<Rules>
+	<System id = "Car">
+		<Mission objective = "Drive">
+			<SystemRule>
+				<Or>
+					<Condition>Car_Engine</Condition>
+					<Condition>Tires</Condition>
+				</Or>
+			</SystemRule>
+				<Entity id = "Car_Engine">
+						<And>
+							<Or>
+								<Condition> Cylinder </Condition>
+								<Condition> Sensor </Condition>
+							</Or>
+							<Condition>Engine_Light </Condition>
+						</And>
+				</Entity>
+				<Asset id = "Cylinder">
+					<AtLeast> .2 </AtLeast>
+				</Asset>
+				<Asset id = "Sensor">
+					<LessThan> .6 </LessThan>
+				</Asset>
+				<Asset id = "Engine_Light">
+					<EqualTo> .0 </EqualTo>
+				</Asset>
+				<Asset id = "Tires">
+					<GreaterThan> .6 </GreaterThan>
+				</Asset>
+		</Mission>
+		<Mission objective = "Racing"> 
+			<SystemRule>
+				<And>
+					<Condition>Car_Engine</Condition>
+					<Condition>Tires</Condition>
+				</And>
+			</SystemRule>
+				<Entity id = "Car_Engine">
+						<And>
+							<Condition> Cylinder </Condition>
+							<Condition> Sensor </Condition>
+							<Condition>Engine_Light </Condition>
+						</And>
+				</Entity>
+				<Asset id = "Cylinder">
+					<AtLeast> .6 </AtLeast>
+				</Asset>
+				<Asset id = "Sensor">
+					<LessThan> .4 </LessThan>
+				</Asset>
+				<Asset id = "Engine_Light">
+					<EqualTo> .0 </EqualTo>
+				</Asset>
+				<Asset id = "Tires">
+					<GreaterThan> .7 </GreaterThan>
+				</Asset>
+		</Mission>
+	</System>
+	<System id = "Boat">
+		<Mission objective = "Sail">
+			<SystemRule>
+				<And>
+					<AmountOf type = "Hull">
+						<AtLeast> 4 </AtLeast>
+					</AmountOf>
+				</And>
+			</SystemRule>
+			<Asset id = "Hull1">
+				<AtLeast> .7 </AtLeast>
+			</Asset>
+			<Asset id = "Hull2">
+				<AtLeast> .7 </AtLeast>
+			</Asset>
+			<Asset id = "Hull3">
+				<AtLeast> .7 </AtLeast>
+			</Asset>
+			<Asset id = "Hull4">
+				<AtLeast> .7 </AtLeast>
+			</Asset>
+			<Asset id = "Hull5">
+				<AtLeast> .7 </AtLeast>
+			</Asset>
+			<Asset id = "Hull6">
+				<AtLeast> .7 </AtLeast>
+			</Asset>
+			<Asset id = "Hull7">
+				<AtLeast> .7 </AtLeast>
+			</Asset>
+		</Mission>
+		<Mission objective = "Fire!">
+			<SystemRule>
+				<Or>
+					<AmountOf type = "Cannon">
+						<AtLeast> 1 </AtLeast>
+					</AmountOf>
+				</Or>
+			</SystemRule>
+			<Asset id = "Cannon1">
+				<AtLeast> .1 </AtLeast>
+			</Asset>
+			<Asset id = "Cannon2">
+				<AtLeast> .1</AtLeast>
+			</Asset>
+			<Asset id = "Cannon3">
+				<AtLeast> .1 </AtLeast>
+			</Asset>
+			<Asset id = "Cannon4">
+				<AtLeast> .1 </AtLeast>
+			</Asset>
+		</Mission>
+	</System>
+</Rules>
+
+			
+			
+					

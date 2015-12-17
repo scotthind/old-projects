@@ -1,0 +1,94 @@
+<Terrains> 
+   <Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> T1 </Description>
+	   <OuterBoundary> 
+	      <Coord> -7, 13 </Coord>
+	      <Coord> 1, 13  </Coord>
+		  <Coord>  0,6 </Coord>
+		  <Coord> -5,6 </Coord>
+		  <Coord> -12,6 </Coord>
+	   </OuterBoundary>
+   </Terrain>
+   <Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> T2 </Description>
+	   <OuterBoundary> 
+		  <Coord> 1,13  </Coord>
+		  <Coord> 7,13 </Coord>
+	      <Coord>  7,6 </Coord>
+		  <Coord>  0,6 </Coord>
+	   </OuterBoundary>
+   </Terrain>
+   <Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> T5 </Description>
+	   <OuterBoundary> 
+			<Coord> 7,6 </Coord>
+			<Coord> 12,6 </Coord>
+			<Coord> 15,0 </Coord>
+			<Coord>  7,0 </Coord>
+	   </OuterBoundary>
+   </Terrain>
+   <Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> T4 </Description>
+	   <OuterBoundary> 
+	      <Coord>  7,6 </Coord>
+		  <Coord>  7,0 </Coord>
+		  <Coord>  -4,0 </Coord>
+		  <Coord>  -5,6 </Coord>
+		  <Coord>  0,6 </Coord>
+	   </OuterBoundary>
+   </Terrain>
+   <Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> T3 </Description>
+	   <OuterBoundary> 
+	      <Coord>  -12,6 </Coord>
+		  <Coord>  -5,6 </Coord>
+		  <Coord>  -4,0</Coord>
+		  <Coord>  -11,0 </Coord>
+	   </OuterBoundary>
+   </Terrain>
+   <Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> T6 </Description>
+	   <OuterBoundary> 
+	      <Coord>  -11,0 </Coord>
+		  <Coord>  -4,0 </Coord>
+		  <Coord>  -5,-6 </Coord>
+		  <Coord>  -11,-6 </Coord>
+	   </OuterBoundary>
+   </Terrain><Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> T7 </Description>
+	   <OuterBoundary> 
+	      <Coord>  -4,0 </Coord>
+		  <Coord>  7,0 </Coord>
+		  <Coord>  7,-6 </Coord>
+		  <Coord>  2,-6 </Coord>
+		  <Coord>  -5,-6</Coord>
+	   </OuterBoundary>
+   </Terrain>
+   <Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> T8 </Description>
+	   <OuterBoundary> 
+	      <Coord>  7,0 </Coord>
+		  <Coord>  15,0 </Coord>
+		  <Coord>  12,-6 </Coord>
+		  <Coord>  7,-6 </Coord>
+	   </OuterBoundary>
+   </Terrain>
+   <Terrain>
+     <Type> FOREST_LIGHT </Type>
+	<Description> T9 </Description>
+	   <OuterBoundary> 
+	      <Coord>  2,-6 </Coord>
+		  <Coord>  7,-6 </Coord>
+		  <Coord>  12,-6 </Coord>
+		  <Coord>  7,-11 </Coord>
+	   </OuterBoundary>
+   </Terrain>
+</Terrains>

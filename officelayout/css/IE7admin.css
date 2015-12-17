@@ -1,0 +1,38 @@
+/**
+ * Author: Joseph Smith and Christopher Bowen
+ *
+ * Specifically for Internet Explorer 7
+ */
+
+/* Realign the map */
+#contentcolumn {
+	margin-left:-240px;
+}
+
+/* Relalign the logo */
+#logo {
+	margin:auto;
+	margin-bottom:-100px;
+}
+
+/* Realign the level selection area */
+#levelFoot {
+    margin-left:-430px;
+}
+
+/* Realign the map options */
+#footer {
+    margin-left:-430px;
+}
+
+/* Realign the display options */
+#display_options {
+    margin-left:-430px;
+}
+
+/* Realign the settings link on the admin page */
+#admin_settings {
+	float:right;
+	margin-right:1000px;
+	margin-bottom:-15px;
+} 
